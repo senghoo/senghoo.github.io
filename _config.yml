@@ -1,6 +1,7 @@
 markdown: redcarpet
 pygments: true
-permalink: /:title
+permalink: pretty
+paginate: 5
 
 url:
 baseurl:
