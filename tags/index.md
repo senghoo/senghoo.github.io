@@ -1,28 +1,8 @@
 ---
-layout:  page
+layout: page
 title: Tags
 description: Tags
 ---
-
-<div class="tagcloud">
-{% for tag in site.tags %}
-{% capture c %} {{ "tag0" }} {% endcapture %}
-{% if tag[1].size > 3 %}
-{% capture c %} {{ "tag1" }} {% endcapture %}
-{% endif %}
-{% if tag[1].size > 10 %}
-{% capture c %} {{ "tag2" }} {% endcapture %}
-{% endif %}
-{% if tag[1].size > 20 %}
-{% capture c %} {{ "tag3" }} {% endcapture %}
-{% endif %}
-{% if tag[1].size > 40 %}
-{% capture c %} {{ "tag4" }} {% endcapture %}
-{% endif %}
-
-<span class="{{ c }}"><a href="#{{ tag[0] }}">{{ tag[0] }}</a></span>
-{% endfor %}
-</div>
 
 <ul class="archive">
 	{% for tag in site.tags %}
