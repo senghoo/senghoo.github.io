@@ -1,13 +1,12 @@
 ---
 layout:  page
-title: 标记
-description: 标记
+title: Tags
+description: Tags
 ---
 
 <div class="tagcloud">
 {% for tag in site.tags %}
 {% capture c %} {{ "tag0" }} {% endcapture %}
-
 {% if tag[1].size > 3 %}
 {% capture c %} {{ "tag1" }} {% endcapture %}
 {% endif %}
