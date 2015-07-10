@@ -1,10 +1,17 @@
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /blog/:categories/:year/:month/:day/:title/
 paginate: 5
 
 url:
 baseurl:
+
+safe: false
+cdnurl: http://7xkamc.com1.z0.glb.clouddn.com
+
+static:
+  image_path: false
+  public_path: false
 
 redcarpet:
   extensions: [strikethrough, tables]
