@@ -17,3 +17,6 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+after_success:
+    "curl --ftp-create-dirs -T ./_site -u $FTP_USER:$FTP_PASSWORD ftp://ftp.keycdn.com/pages"
