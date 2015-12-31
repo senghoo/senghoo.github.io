@@ -13,7 +13,7 @@ layout: default
   </div>
   <h2>{{ page.title }}</h2>
   <div>
-    {{ page.content }}
+    {{ page.content | markdownify }}
   </div>
   <span class="tags">
     Tags: {% for tag in page.tags %}
