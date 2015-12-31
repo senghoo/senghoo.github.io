@@ -1,0 +1,24 @@
+---
+layout: default
+title: Coding Marathon
+---
+
+<section class="archive">
+
+{% for post in site.posts %}
+    {% if post.category == '编程马拉松' %}
+    <div class="row bundle gutters fadeInDown animated">
+        <div class="col span_2">
+            第
+            {{ post.date | date: "%s" | minus: 1451404800 |divided_by: 86400 | plus: 1  }}
+            天
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="col span_8">{{ post.title }}</a>
+        <div class="col span_2">
+            {{ post.date | date: "%D" }}
+        </div>
+    </div>
+    {% endif %}
+
+{% endfor %}
+</section>
