@@ -5,10 +5,11 @@ title: About
 
 ###关于 Senghoo Kim
 
-* 码农一枚。
-* 崇尚精于心，简于行
-* 专注Linux,Emacs,Python,C
+* 码农一枚
 
 ###联系方式:
 
-邮箱:me(at)senghoo.com
+* 邮箱: me(at)senghoo.com
+* Github: [https://github.com/senghoo](https://github.com/senghoo)
+
+
