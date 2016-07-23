@@ -125,7 +125,6 @@ footer {
 /*----------------------------------------------------------------------------*/
 
 .highlight {
-  padding: 10px;
   border-radius: 6px;
   background-color: #272822;
   color: #f8f8f2;
@@ -133,6 +132,9 @@ footer {
 
   code {
     font-size: .7rem;
+  }
+  table, table td, table th{
+      border: none;
   }
 }
 
