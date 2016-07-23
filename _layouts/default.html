@@ -1,36 +1,38 @@
 {% include cdn.html %}
 <!DOCTYPE html>
 <html>
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <div class="container azul">
-      <header class="top row gutters{% if page.title == "Home" %} fadeInLeft animated{% endif %}">
-        <div class="col span_2 center">
-          <a href="{{ site.url }}" id="logo" title="{{ site.data.brume.name }}"
-             style="background-image: url({{ PUBLIC_PATH }}/images/logo.png);"></a>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div class="container azul">
+            <header class="top row gutters{% if page.title == "Home" %} fadeInLeft animated{% endif %}">
+                <div class="col span_2 center">
+                    <a href="{{ site.url }}" id="logo" title="{{ site.data.brume.name }}"
+                       style="background-image: url({{ PUBLIC_PATH }}/images/logo.png);"></a>
+                </div>
+                {% include navigation.html %}
+            </header>
+
+            {{ content }}
+
+            <footer>
+                <p>
+                    Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+                </p>
+            </footer>
         </div>
-        {% include navigation.html %}
-      </header>
 
-      {{ content }}
-
-      <footer>
-        <p>
-          Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-        </p>
-      </footer>
-    </div>
-
-    <!-- scripts -->
-    <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-1.10.2.min.js"></script>
-    <script src="{{ PUBLIC_PATH }}/js/jquery.fitvids.js"></script>
-    <script>
-      $(document).ready(function(){
-        $("article").fitVids();
-      });
-    </script>
-    {% include ga.html  %}
-  </body>
+        <!-- scripts -->
+        <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-1.10.2.min.js"></script>
+        <script src="{{ PUBLIC_PATH }}/js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        <script>
+         $(document).ready(function(){
+             $("article").fitVids();
+         });
+        </script>
+        {% include ga.html  %}
+    </body>
 </html>
