@@ -13,3 +13,5 @@
 {% else %}
   {% capture IMAGE_PATH %}{{ site.baseurl }}/images/{% endcapture %}
 {% endif %}
+
+{% capture CDN_VERSION %}v={{site.time | date: '%Y%m%d%H%M%S'}}{% endcapture %}

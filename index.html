@@ -4,7 +4,7 @@ title: Home
 ---
 {% include cdn.html %}
 
-<link rel="stylesheet" href="{{ PUBLIC_PATH }}/css/index.css">
+<link rel="stylesheet" href="{{ PUBLIC_PATH }}/css/index.css?{{CDN_VERSION}}">
 {% for post in paginator.posts %}
 {% unless site.data.index_exclude contains (post.categories[0]) %}
 <article class="gutters">
