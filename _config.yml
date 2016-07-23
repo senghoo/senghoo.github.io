@@ -1,5 +1,5 @@
 gems: [jekyll-paginate]
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: /blog/:categories/:year/:month/:day/:title/
 paginate: 5
