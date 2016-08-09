@@ -1,13 +1,13 @@
 - url: /
   title: Home
 
-- url: /notes
+- url: /notes/
   title: Notes
 
-- url: /archives
+- url: /archives/
   title: Archives
 
-- url: /about
+- url: /about/
   title: About
 
 
