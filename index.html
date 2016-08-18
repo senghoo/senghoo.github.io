@@ -6,7 +6,7 @@ title: Home
 
 <link rel="stylesheet" href="{{ PUBLIC_PATH }}/css/index.css?{{CDN_VERSION}}">
 {% for post in paginator.posts %}
-{% unless site.data.index_exclude contains (post.categories[0]) %}
+{% unless post.hidden %}
 <article class="gutters">
     <div class="post-info">
         <time class="published" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_long_string }}</time>
