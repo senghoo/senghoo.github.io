@@ -9,7 +9,7 @@ title: Home
 {% unless post.hidden %}
 <article class="gutters">
     <div class="post-info">
-        <time class="published" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_long_string }}</time>
+        <time class="published" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
         /
         <span>{% for cat in post.categories %}
             <a href="/categories/#{{ cat }}">{{ cat }}</a>
