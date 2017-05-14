@@ -1,30 +1,17 @@
-{% include cdn.html %}
 <!DOCTYPE html>
 <html>
-    <head>
-        {% include head.html %}
-    </head>
+    {% include head.html %}
+
     <body>
-        <div class="container azul">
-            <header class="top row gutters{% if page.title == "Home" %} fadeInLeft animated{% endif %}">
-                <div class="col span_2 center">
-                    <a href="{{ site.url }}" id="logo" title="{{ site.data.brume.name }}"
-                       style="background-image: url({{ PUBLIC_PATH }}/images/logo.png?{{CDN_VERSION}});"></a>
-                </div>
-                {% include navigation.html %}
-            </header>
+        <div class="wrapper clear">
+            {% include sidebar.html %}
 
-            {{ content }}
-
-            <footer>
-                <p>
-                    Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-                </p>
-            </footer>
+            <main class="the-content" role="main">
+                {% include search.html %}
+                {{ content }}
+            </main>
         </div>
 
-        <!-- scripts -->
-        {% include js.html %}
-        {% include ga.html  %}
+        {% include scripts.html %}
     </body>
 </html>

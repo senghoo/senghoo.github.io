@@ -1,39 +1,80 @@
-gems: [jekyll-paginate]
-markdown: kramdown
-highlighter: rouge
+# General Settings
+name: Senghoo Kim
+job_title: Software Developer
+email: me@senghoo.com
+description: 码农一枚
+avatar: /public/images/logo.png
+favicon: /public/images/favicon.ico
+twitter_handler: shkdmb
+analytics_code: UA-5243486-3
+disqus: senghoo
+
+# Social Accounts
+social_networks:
+-  { name: facebook, url: '' }
+-  { name: twitter, url: '' }
+-  { name: instagram, url: '' }
+-  { name: google-plus, url: '' }
+-  { name: linkedin, url: '' }
+-  { name: skype, url: '' }
+-  { name: github, url: '' }
+-  { name: codepen, url: '' }
+-  { name: stack-overflow, url: '' }
+-  { name: dribbble, url: '' }
+-  { name: behance, url: '' }
+-  { name: pinterest, url: '' }
+-  { name: tumblr, url: '' }
+-  { name: youtube, url: '' }
+-  { name: vimeo, url: '' }
+-  { name: vine, url: '' }
+-  { name: 500px, url: '' }
+-  { name: flickr, url: '' }
+-  { name: spotify, url: '' }
+-  { name: steam, url: '' }
+-  { name: wordpress, url: '' }
+-  { name: xing, url: '' }
+-  { name: bitcoin, url: '' }
+
+# Modules Settings
+show_categories: 1
+show_tags: 1
+show_email: 1
+show_rss: 1
+show_comments: 1
+show_menu: 1
+fixed_sidebar: 1
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: "true"
+
+# Serving
+url: ""
+baseurl: ""
+
+# Includes
+include: ["_pages"]
+
+# Outputting
 permalink: /blog/:categories/:year/:month/:day/:title/
-paginate: 5
-paginate_path: "page:num"
-exclude: [vendor]
+category_dir: categories
 
-url:
-baseurl:
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
 
-safe: false
-cdnurl: http://7xkamc.com1.z0.glb.clouddn.com
+# Conversion
+markdown: kramdown
+excerpt_separator: <!--more-->
 
-static:
-  image_path: false
-  public_path: false
+# Assets Settings
+sass:
+  sass_dir: assets/partials
+  style: compressed
 
-redcarpet:
-  extensions: [strikethrough, tables]
-
-# More › http://kramdown.gettalong.org/quickref.html
-# Options › http://kramdown.gettalong.org/options.html
-kramdown:
-  input:          GFM
-  # https://github.com/jekyll/jekyll/pull/4090
-  syntax_highlighter: rouge
-
-  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
-  # span, block element options fall back to global
-  syntax_highlighter_opts:
-    # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: 'highlight'
-    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+gems: [jekyll-paginate]

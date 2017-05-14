@@ -2,8 +2,12 @@
 layout: default
 ---
 
-<article class="single row gutters">
-  <h2>{{ page.title }}</h2>
-  {{ content }}
-</article>
+<article class="post page single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <h2 itemprop="name headline">{{ page.title }}</h2>
+    </header>
 
+    <div class="post-content">
+        {{ content }}
+    </div>
+</article>
