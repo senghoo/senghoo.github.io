@@ -1,17 +1,2 @@
-{% if site.static.public_path %}
-  {% assign PUBLIC_PATH = site.static.public_path %}
-{% elsif jekyll.environment == "production" %}
-  {% capture PUBLIC_PATH %}{{ site.cdnurl }}/public/{% endcapture %}
-{% else %}
-  {% capture PUBLIC_PATH %}{{ site.baseurl }}/public/{% endcapture %}
-{% endif %}
-
-{% if site.static.image_path %}
-  {% assign IMAGE_PATH = site.static.image_path %}
-{% elsif jekyll.environment == "production" %}
-  {% capture IMAGE_PATH %}{{ site.cdnurl }}/images/{% endcapture %}
-{% else %}
-  {% capture IMAGE_PATH %}{{ site.baseurl }}/images/{% endcapture %}
-{% endif %}
-
-{% capture CDN_VERSION %}v={{site.time | date: '%Y%m%d%H%M%S'}}{% endcapture %}
+{% capture PUBLIC_PATH %}{{ site.baseurl }}/public{% endcapture %}
+{% capture IMAGE_PATH %}{{ site.baseurl }}/images/{% endcapture %}
