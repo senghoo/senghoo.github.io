@@ -70,7 +70,7 @@ paginate_path: "/page:num/"
 
 # Conversion
 markdown: kramdown
-excerpt_separator: <!--more-->
+excerpt_separator:  '<!-- more -->'
 
 # Assets Settings
 sass:
